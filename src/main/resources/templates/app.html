@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Manager</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" id="title" name="title"></td>
+            </tr>
+            <tr>
+                <td>Author:</td>
+                <td><input type="text" id="author" name="author"></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><input type="text" id="description" name="description"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <input type="button" id="Save New" onclick="saveNew()" value="Save New">
+        <input type="button" id="Save" onclick="saveSelected()" value="Save" disabled>
+        <input type="button" id="Delete" onclick="deleteSelected()" value="Delete" disabled>
+    </div>
+    <table>
+        <tbody id="Booklist">
+            <tr>
+                <th>Author</td>
+                    <th>Title</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
